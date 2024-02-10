@@ -1,12 +1,6 @@
-# FlowPDF - Generating PDF in Swift
-A library for generating PDF files in Xcode by adding content sequentially to the document. PDFKit is used as a basis. There is an example of use for SwiftUI via UIViewRepresentable
-
-![Image alt](https://github.com/XMaster-Denis/FlowPDF/raw/main/docs/img/screenshot_FlowPDF.png)
-
-```swift
 import SwiftUI
 import PDFKit
-import FlowPDF
+//import FlowPDF
 
 struct PDFGeneratorFromFlowView: UIViewRepresentable {
 
@@ -211,4 +205,3 @@ struct PDFGeneratorFromFlowView: UIViewRepresentable {
 #Preview {
     PDFGeneratorFromFlowView()
 }
-```
