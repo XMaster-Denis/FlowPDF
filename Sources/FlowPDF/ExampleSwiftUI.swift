@@ -135,7 +135,7 @@ struct PDFGeneratorFromFlowView: UIViewRepresentable {
         // Add a line with the total
         let total = ["Total of products", "$ 4.50"]
         let totalWidthCollumns: [CGFloat] = [80, 20]
-        let totalTableRow = FlowPDFTable(total, widthCollumns: totalWidthCollumns)
+        let totalTableRow = FlowPDFTable(total, widthCollumns: totalWidthCollumns, newFont: .boldSystemFont(ofSize: 20))
         totalTableRow.marginRight = 20
         totalTableRow.marginLeft = 20
         totalTableRow.marginBottom = 0

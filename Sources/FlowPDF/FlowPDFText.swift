@@ -55,7 +55,8 @@ public class FlowPDFText: FlowPDFContentProtocol {
     private var textCanvas: CGSize = .zero
     var text: String = ""
     
-    public init(_ text: String) {
+    public init(_ text: String, fontOfText: UIFont = .boldSystemFont(ofSize: 14)) {
+        self.fontOfText = fontOfText
         self.text = text
     }
     

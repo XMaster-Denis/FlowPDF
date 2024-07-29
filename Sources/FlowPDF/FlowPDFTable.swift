@@ -62,6 +62,13 @@ public class FlowPDFTable: FlowPDFContentProtocol {
         }
     }
     
+    public convenience init(_ content: [String], widthCollumns: [CGFloat] = [], newFont: UIFont) {
+        self.init(widthCollumns: widthCollumns)
+        content.forEach { str in
+            self.headerContent.append(FlowPDFText(str, fontOfText: newFont))
+        }
+    }
+    
     public convenience init(_ content: [FlowPDFContentProtocol], widthCollumns: [CGFloat] = []) {
         self.init(widthCollumns: widthCollumns)
         self.headerContent = content
